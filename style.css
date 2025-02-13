@@ -56,7 +56,7 @@ header > .center > div > i{
   padding: 10px;
 }
 header > .center > div > ul{
-  width: 600px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   
@@ -67,18 +67,25 @@ header > .center > div > ul >li:nth-child(1){
 }
   
 header > .center > div > ul >li:nth-child(4){
-  width: 200px;
+  /* width: 60%; */
   flex: 2;
   border-radius: 0 50px 50px 0;
   border: none;
+  margin-right: 10px;
 }
 header > .center > div > ul > li:nth-child(2),
 header > .center > div > ul > li:nth-child(3){
   /* width: 20%; */
   flex: 1;
 }
+header > .center > div > ul > li:nth-child(2):hover,
+header > .center > div > ul > li:nth-child(3):hover{
+  /* width: 20%; */
+  border-radius: 20px;
+  border: none;
+}
 header > .center > div > ul > li{
-  border-right: 1px solid #222;
+  border-right: 1px solid #afabab;
   padding: 3px 20px;
 }
 header > .center > div > ul > li > p:nth-child(1){
@@ -91,6 +98,7 @@ header > .center > div > ul > li:hover{
   background-color: #e9e3e3;
   cursor: pointer;
 }
+
 header > .right{
   display: flex;
   align-items: center;
@@ -275,6 +283,7 @@ main .card > .card-img > .card-title > p{
 }
 main .card > .card-img > .card-title > i {
   color: #fff;
+  font-size: 15px;
 }
 main .card > .card-img > .card-btn > p{
   width: 20px;
